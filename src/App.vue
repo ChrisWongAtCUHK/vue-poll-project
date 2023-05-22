@@ -2,14 +2,13 @@
 import { ref } from 'vue'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import Tabs from './components/Tabs.vue'
 
 export default {
   components: {
     Header: Header,
-    Footer: Footer
-  },
-  props : {
-    
+    Footer: Footer,
+    Tabs: Tabs
   },
   setup() {
     const itemList = ['Current Polls', 'Add New Poll'];
@@ -18,50 +17,15 @@ export default {
     return {
       items, activeItem
     }
-  },
-
-  mounted() {
-    console.log(this.items)
-    console.log(this.activeItem)
   }
 }
 </script>
 
 <template>
   <Header />
-  <div class="tabs">
-    <ul>
-        <li v-for="item in items" :key="item" @click=" activeItem = item">
-          <div :class="{ active: item === activeItem }">{{item}}</div>
-        </li>
-    </ul>
-  </div>
+  <Tabs :items="items" :activeItem="activeItem" @setActiveItem="(item) => { activeItem = item}" />
   <Footer />
 </template>
 
 <style scoped>
-  ul {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  li {
-    margin: 0 16px;
-    font-size: 18px;
-    color: #555;
-    cursor: pointer;
-  }
-  
-  .tabs {
-    margin-bottom: 40px;
-  }
-
-  .active {
-    color: #d91b42;
-    border-bottom: 2px solid #d91b42;
-    padding-bottom: 8px;
-
-  }
 </style>

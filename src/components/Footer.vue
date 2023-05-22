@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
   <footer>
     <div class="copyright">Copyright 2023 Poll Ninja</div>
