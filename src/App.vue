@@ -32,7 +32,7 @@ export default {
   <div class="tabs">
     <ul>
         <li v-for="item in items" :key="item">
-          <div >{{item}}</div>
+          <div :class="{ active: item === activeItem }">{{item}}</div>
         </li>
     </ul>
   </div>
@@ -56,5 +56,12 @@ export default {
   
   .tabs {
     margin-bottom: 40px;
+  }
+
+  .active {
+    color: #d91b42;
+    border-bottom: 2px solid #d91b42;
+    padding-bottom: 8px;
+
   }
 </style>
