@@ -31,7 +31,7 @@ export default {
   <Header />
   <div class="tabs">
     <ul>
-        <li v-for="item in items" :key="item">
+        <li v-for="item in items" :key="item" @click=" activeItem = item">
           <div :class="{ active: item === activeItem }">{{item}}</div>
         </li>
     </ul>
