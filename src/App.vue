@@ -29,8 +29,32 @@ export default {
 
 <template>
   <Header />
+  <div class="tabs">
+    <ul>
+        <li v-for="item in items" :key="item">
+          <div >{{item}}</div>
+        </li>
+    </ul>
+  </div>
   <Footer />
 </template>
 
 <style scoped>
+  ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    margin: 0 16px;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .tabs {
+    margin-bottom: 40px;
+  }
 </style>
