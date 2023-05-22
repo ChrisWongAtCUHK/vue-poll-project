@@ -24,6 +24,12 @@ export default {
 <template>
   <Header />
   <Tabs :items="items" :activeItem="activeItem" @setActiveItem="(item) => { activeItem = item}" />
+  <p v-if="activeItem === items[0]">
+    Poll list component goes here
+  </p>
+  <p v-if="activeItem === items[1]">
+    new poll component goes here
+  </p>
   <Footer />
 </template>
 
