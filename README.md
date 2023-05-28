@@ -38,3 +38,4 @@ npm run lint
 * [Svelte Tutorial for Beginners #18 - Starting the Polls Project](https://www.youtube.com/watch?v=f0v5WcrU_vM&list=PL4cUxeGkcC9hlbrVO_2QFVqVPhlZmz7tO&index=18)
 * [Svelte Tutorial for Beginners #19 - Header & Footer Components](https://www.youtube.com/watch?v=xwiER0u9YS0&list=PL4cUxeGkcC9hlbrVO_2QFVqVPhlZmz7tO&index=19)
 * [Svelte Tutorial for Beginners #20 - Reusable Tabs Component](https://www.youtube.com/watch?v=U8cM_jhmDxA&list=PL4cUxeGkcC9hlbrVO_2QFVqVPhlZmz7tO&index=20)
+* [Svelte Tutorial for Beginners #21 - Poll Form Component](https://www.youtube.com/watch?v=Cv8vo4ZBy2E&list=PL4cUxeGkcC9hlbrVO_2QFVqVPhlZmz7tO&index=21)

@@ -2,12 +2,14 @@
 import { ref } from 'vue'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import CreatePollForm from './components/CreatePollForm.vue';
 import Tabs from './components/Tabs.vue'
 
 export default {
   components: {
     Header: Header,
     Footer: Footer,
+    CreatePollForm: CreatePollForm,
     Tabs: Tabs
   },
   setup() {
@@ -28,7 +30,7 @@ export default {
     Poll list component goes here
   </p>
   <p v-if="activeItem === items[1]">
-    new poll component goes here
+    <CreatePollForm />
   </p>
   <Footer />
 </template>
